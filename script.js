@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let score = 0; 
     let gameStarted = false; 
     let food = {x:300 , y:200};
-    let snake = [{x:160, y:200}, {x:140, y:200}, {x:120, y:200}];
+    let snake = [{x:160, y:200}, {x:140, y:200}, {x:120, y:200}, {x:100, y:200}];
     let dx = cellSize;  //* displacement with x-axis  
     let dy = 0;    //* displacement with y-axis  
 
@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function drawFoodAndSnake() {
         snakeBoard.innerHTML = ""; 
+       
+        snake.forEach((snakeCell) => {
+            const element = drawDiv(snakeCell.x, snakeCell.y, "snake");
+            snakeBoard.appendChild(element);
+        })
+
         const foodElement = drawDiv(food.x, food.y, 'food'); 
         snakeBoard.appendChild(foodElement); 
 

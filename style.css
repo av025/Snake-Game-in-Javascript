@@ -44,7 +44,16 @@ body {
 
 .start-game:hover {
     background-color:#089365 ;
-} 
+}  
+
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    border-radius: 5px;
+    position: absolute;
+}
 
 .food {
     width: 20px;
