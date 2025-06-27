@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,12 +16,34 @@ body {
 
 #snake-board {
     width: 800px;
-    height: 600px;
+    height: 500px;
     background-color: #333;
     position: relative;
     border: 5px solid #666;
     margin-bottom: 20px;
     box-shadow:0 0 20px rgba(0, 0, 0, 0.5) ;
+} 
+
+#score-board {
+    font-size: x-large;
+    font-weight: bold;
+    color: #111;
+    margin: 10px 0;
+} 
+
+.start-game {
+    background-color: #66cdaa;
+    font-size: 1rem;
+    color: aliceblue;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+.start-game:hover {
+    background-color:#089365 ;
 }
 
 
