@@ -39,11 +39,29 @@ body {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    
+
 }
 
 .start-game:hover {
     background-color:#089365 ;
+} 
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: foodAnimation 1s infinite;
+}
+
+
+@keyframes foodAnimation { 
+    50% { 
+        opacity: 0.5;
+
+    }
+    
 }
 
 
