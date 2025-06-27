@@ -1,77 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: antiquewhite;
-    text-align: center;
-} 
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: antiquewhite;
+  text-align: center;
+}
 
 #snake-board {
-    width: 800px;
-    height: 500px;
-    background-color: #333;
-    position: relative;
-    border: 5px solid #666;
-    margin-bottom: 20px;
-    box-shadow:0 0 20px rgba(0, 0, 0, 0.5) ;
-} 
+  width: 800px;
+  height: 500px;
+  background-color: #333;
+  position: relative;
+  border: 5px solid #666;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden; 
+}
 
 #score-board {
-    font-size: x-large;
-    font-weight: bold;
-    color: #111;
-    margin: 10px 0;
-} 
+  font-size: x-large;
+  font-weight: bold;
+  color: #111;
+  margin: 10px 0;
+}
 
 .start-game {
-    background-color: #66cdaa;
-    font-size: 1rem;
-    color: aliceblue;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-
+  background-color: #66cdaa;
+  font-size: 1rem;
+  color: aliceblue;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .start-game:hover {
-    background-color:#089365 ;
-}  
-
+  background-color: #089365;
+}
 
 .snake {
-    width: 20px;
-    height: 20px;
-    background-color: chartreuse;
-    border-radius: 5px;
-    position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: chartreuse;
+  border-radius: 5px;
+  position: absolute;
 }
 
 .food {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    border-radius: 50%;
-    animation: foodAnimation 1s infinite;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  animation: foodAnimation 1s infinite;
+  z-index: 10; 
 }
 
-
-@keyframes foodAnimation { 
-    50% { 
-        opacity: 0.5;
-
-    }
-    
+@keyframes foodAnimation {
+  50% {
+    opacity: 0.5;
+  }
 }
+
 
 
 
